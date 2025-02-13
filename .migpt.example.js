@@ -147,7 +147,7 @@ export default {
      */
 
     // 是否启用连续对话功能，部分小爱音箱型号无法查询到正确的播放状态，需要关闭连续对话
-    streamResponse: false,
+    streamResponse: true,
     // 连续对话时，无响应多久后自动退出
     exitKeepAliveAfter: 30, // 默认 30 秒，建议不要超过 1 分钟
     // 连续对话时，下发 TTS 指令多长时间后开始检测设备播放状态（默认 3 秒）
