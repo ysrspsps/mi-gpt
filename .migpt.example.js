@@ -78,11 +78,11 @@ Bad example: "2024年02月28日星期三 23:01 {{botName}}: 我是{{botName}}"
 export default {
   systemTemplate,
   bot: {
-    name: "傻妞",
+    name: "jarvis",
     profile: botProfile,
   },
   master: {
-    name: "陆小千",
+    name: "男神",
     profile: masterProfile,
   },
   speaker: {
@@ -91,26 +91,26 @@ export default {
      */
 
     // 小米 ID
-    userId: "987654321", // 注意：不是手机号或邮箱，请在「个人信息」-「小米 ID」查看
+    userId: "6786634016", // 注意：不是手机号或邮箱，请在「个人信息」-「小米 ID」查看
     // 账号密码
-    password: "123456",
+    password: "Zmakqo10",
     // 小爱音箱 DID 或在米家中设置的名称
-    did: "小爱音箱Pro", // 注意空格、大小写和错别字（音响 👉 音箱）
+    did: "小爱音箱", // 注意空格、大小写和错别字（音响 👉 音箱）
 
     /**
      * 💡 唤醒词与提示语
      */
 
     // 当消息以下面的关键词开头时，会调用 AI 来回复消息
-    callAIKeywords: ["请", "你", "傻妞"],
+    callAIKeywords: ["请", "你", "jarvis"],
     // 当消息以下面的关键词开头时，会进入 AI 唤醒状态
     wakeUpKeywords: ["打开", "进入", "召唤"],
     // 当消息以下面的关键词开头时，会退出 AI 唤醒状态
     exitKeywords: ["关闭", "退出", "再见"],
     // 进入 AI 模式的欢迎语
-    onEnterAI: ["你好，我是傻妞，很高兴认识你"], // 设为空数组时可关闭提示语
+    onEnterAI: ["你好，我是jarvis，又见面了"], // 设为空数组时可关闭提示语
     // 退出 AI 模式的提示语
-    onExitAI: ["傻妞已退出"], // 为空时可关闭提示语
+    onExitAI: ["jarvis已退出"], // 为空时可关闭提示语
     // AI 开始回答时的提示语
     onAIAsking: ["让我先想想", "请稍等"], // 为空时可关闭提示语
     // AI 结束回答时的提示语
@@ -129,7 +129,7 @@ export default {
     // 设备唤醒指令，请到 https://home.miot-spec.com 查询具体指令
     wakeUpCommand: [5, 3],
     // 查询是否在播放中指令，请到 https://home.miot-spec.com 查询具体指令
-    // playingCommand: [3, 1, 1], // 默认无需配置此参数，查询播放状态异常时再尝试开启
+    playingCommand: [3, 1, 1], // 默认无需配置此参数，查询播放状态异常时再尝试开启
 
     /**
      * 🔊 TTS 引擎
@@ -138,7 +138,7 @@ export default {
     // TTS 引擎
     tts: "xiaoai",
     // 切换 TTS 引擎发言人音色关键词，只有配置了第三方 TTS 引擎时才有效
-    // switchSpeakerKeywords: ["把声音换成"], // 以此关键词开头即可切换音色，比如：把声音换成 xxx
+    switchSpeakerKeywords: ["把声音换成"], // 以此关键词开头即可切换音色，比如：把声音换成 xxx
 
     /**
      * 💬 连续对话
